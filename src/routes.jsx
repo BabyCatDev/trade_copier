@@ -4,7 +4,15 @@ import {
   TableCellsIcon,
   BellIcon,
   ArrowRightOnRectangleIcon,
+  ChartBarSquareIcon,
+  Cog6ToothIcon,
   UserPlusIcon,
+  MagnifyingGlassIcon,
+  UsersIcon,
+  ShareIcon,
+  EnvelopeIcon,
+  ArrowRightIcon,
+  ArrowsRightLeftIcon,
 } from "@heroicons/react/24/solid";
 import { Home, Profile, Tables, Notifications } from "@/pages/dashboard";
 import { SignIn, SignUp } from "@/pages/auth";
@@ -17,6 +25,30 @@ export const routes = [
   {
     layout: "dashboard",
     pages: [
+      // {
+      //   icon: <HomeIcon {...icon} />,
+      //   name: "dashboard",
+      //   path: "/home",
+      //   element: <Home />,
+      // },
+      // {
+      //   icon: <UserCircleIcon {...icon} />,
+      //   name: "profile",
+      //   path: "/profile",
+      //   element: <Profile />,
+      // },
+      // {
+      //   icon: <TableCellsIcon {...icon} />,
+      //   name: "tables",
+      //   path: "/tables",
+      //   element: <Tables />,
+      // },
+      // {
+      //   icon: <BellIcon {...icon} />,
+      //   name: "notifactions",
+      //   path: "/notifactions",
+      //   element: <Notifications />,
+      // },
       {
         icon: <HomeIcon {...icon} />,
         name: "dashboard",
@@ -24,22 +56,47 @@ export const routes = [
         element: <Home />,
       },
       {
-        icon: <UserCircleIcon {...icon} />,
-        name: "profile",
-        path: "/profile",
+        icon: <ChartBarSquareIcon {...icon} />,
+        name: "signals",
+        path: "/signals",
         element: <Profile />,
       },
+
+      // {
+      //   icon: <Cog6ToothIcon {...icon} />,
+      //   name: "configuration",
+      //   path: "/configuration",
+      //   element: <Notifications />,
+      // },
       {
-        icon: <TableCellsIcon {...icon} />,
-        name: "tables",
-        path: "/tables",
+        icon: <UsersIcon {...icon} />,
+        name: "accounts",
+        path: "/accounts",
         element: <Tables />,
       },
       {
-        icon: <BellIcon {...icon} />,
-        name: "notifactions",
-        path: "/notifactions",
-        element: <Notifications />,
+        icon: <ShareIcon {...icon} />,
+        name: "trade copier",
+        path: "/trade copier",
+        element: <Tables />,
+      },
+      {
+        icon: <EnvelopeIcon {...icon} />,
+        name: "email alerts",
+        path: "/email alerts",
+        element: <Tables />,
+      },
+      {
+        icon: <ArrowRightIcon {...icon} />,
+        name: "signal followers",
+        path: "/signal followers",
+        element: <Tables />,
+      },
+      {
+        icon: <ArrowsRightLeftIcon {...icon} />,
+        name: "signal provider",
+        path: "/signal provider",
+        element: <Tables />,
       },
     ],
   },
