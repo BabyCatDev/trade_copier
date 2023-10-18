@@ -14,7 +14,14 @@ import {
   ArrowRightIcon,
   ArrowsRightLeftIcon,
 } from "@heroicons/react/24/solid";
-import { Home, Profile, Tables, Notifications } from "@/pages/dashboard";
+import {
+  Home,
+  Profile,
+  Tables,
+  Notifications,
+  Accounts,
+  Signals,
+} from "@/pages/dashboard";
 import { SignIn, SignUp } from "@/pages/auth";
 
 const icon = {
@@ -59,7 +66,7 @@ export const routes = [
         icon: <ChartBarSquareIcon {...icon} />,
         name: "signals",
         path: "/signals",
-        element: <Profile />,
+        element: <Signals />,
       },
 
       // {
@@ -72,7 +79,7 @@ export const routes = [
         icon: <UsersIcon {...icon} />,
         name: "accounts",
         path: "/accounts",
-        element: <Tables />,
+        element: <Accounts />,
       },
       {
         icon: <ShareIcon {...icon} />,

@@ -9,7 +9,8 @@ import {
   IconButton,
 } from "@material-tailwind/react";
 import {
-  EllipsisVerticalIcon,
+  WifiIcon,
+  ChartBarSquareIcon,
   ArrowRightIcon,
   ArrowLeftIcon,
 } from "@heroicons/react/24/outline";
@@ -76,6 +77,11 @@ export function AccountsTable() {
           <tr key={key}>
             <td className={className}>
               <Typography className="text-xs font-semibold text-blue-gray-600">
+                <WifiIcon strokeWidth={2} className="h-4 w-4" color="green" />
+              </Typography>
+            </td>
+            <td className={className}>
+              <Typography className="text-xs font-semibold text-blue-gray-600">
                 {account}
               </Typography>
             </td>
@@ -140,36 +146,11 @@ export function AccountsTable() {
                 {total}
               </Typography>
             </td>
-            {/* <td className={className}>
-            <Typography className="text-xs font-semibold text-blue-gray-600">
-              {job[0]}
-            </Typography>
-            <Typography className="text-xs font-normal text-blue-gray-500">
-              {job[1]}
-            </Typography>
-          </td>
-          <td className={className}>
-            <Chip
-              variant="gradient"
-              color={online ? "green" : "blue-gray"}
-              value={online ? "online" : "offline"}
-              className="py-0.5 px-2 text-[11px] font-medium"
-            />
-          </td>
-          <td className={className}>
-            <Typography className="text-xs font-semibold text-blue-gray-600">
-              {date}
-            </Typography>
-          </td>
-          <td className={className}>
-            <Typography
-              as="a"
-              href="#"
-              className="text-xs font-semibold text-blue-gray-600"
-            >
-              Edit
-            </Typography>
-          </td> */}
+            <td className={className}>
+              <IconButton color="blue" className="h-8 w-8">
+                <ChartBarSquareIcon strokeWidth={2} className="h-4 w-4" />
+              </IconButton>
+            </td>
           </tr>
         );
       }
@@ -187,6 +168,7 @@ export function AccountsTable() {
             <thead>
               <tr>
                 {[
+                  "",
                   "Account",
                   "MT",
                   "Balance",

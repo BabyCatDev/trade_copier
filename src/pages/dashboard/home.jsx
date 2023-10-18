@@ -2,9 +2,9 @@ import { useState } from "react";
 import { ButtonGroup, Button, IconButton } from "@material-tailwind/react";
 import { FunnelIcon, EyeSlashIcon } from "@heroicons/react/24/outline";
 import { authorsTableData, projectsTableData } from "@/data";
-import AccountsTable from "@/components/AccountsTable";
-import TradesTable from "@/components/TradesTable";
-import HistoryTable from "@/components/HistoryTable";
+import AccountsTable from "@/components/home/AccountsTable";
+import TradesTable from "@/components/home/TradesTable";
+import HistoryTable from "@/components/home/HistoryTable";
 export function Home() {
   const [buttonState, setButtonState] = useState("accounts");
   return (
