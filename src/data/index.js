@@ -11,3 +11,4 @@ export * from "@/data/trades-table-data";
 export * from "@/data/history-table-data";
 export * from "@/data/manage-account-data";
 export * from "@/data/signal-table-data";
+export * from "@/data/copier-table-data";

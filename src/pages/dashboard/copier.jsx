@@ -10,10 +10,13 @@ import {
   Select,
   Option,
 } from "@material-tailwind/react";
-import { UserPlusIcon, BuildingLibraryIcon } from "@heroicons/react/24/outline";
-import { authorsTableData, projectsTableData } from "@/data";
-import ManageAccount from "@/components/config/ManageAccount";
-export function Accounts() {
+import {
+  UserPlusIcon,
+  BuildingLibraryIcon,
+  PlusCircleIcon,
+} from "@heroicons/react/24/outline";
+import TradeCopierTable from "@/components/config/TradeCopier";
+export function Copier() {
   const [open, setOpen] = useState(false);
   const handleOpen = () => setOpen(!open);
 
@@ -27,19 +30,11 @@ export function Accounts() {
           onClick={handleOpen}
           variant="gradient"
         >
-          <UserPlusIcon color="white" className="h-5 w-5 text-inherit" />
-          <div>Add</div>
-        </Button>
-        <Button
-          size="md"
-          color="blue"
-          className="flex items-center justify-center gap-2"
-        >
-          <BuildingLibraryIcon color="white" className="h-5 w-5 text-inherit" />
-          <div>HOST</div>
+          <PlusCircleIcon color="white" className="h-5 w-5 text-inherit" />
+          <div>Create</div>
         </Button>
       </div>
-      <ManageAccount />
+      <TradeCopierTable />
       <Dialog
         open={open}
         handler={handleOpen}
@@ -111,4 +106,4 @@ export function Accounts() {
   );
 }
 
-export default Accounts;
+export default Copier;

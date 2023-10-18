@@ -5,12 +5,10 @@ import {
   Dialog,
   DialogBody,
   DialogHeader,
-  DialogFooter,
   Input,
   Select,
-  Option,
 } from "@material-tailwind/react";
-import { UserPlusIcon, BuildingLibraryIcon } from "@heroicons/react/24/outline";
+import { UserPlusIcon, CreditCardIcon } from "@heroicons/react/24/outline";
 import SignalTable from "@/components/signal/SignalTable";
 export function Signals() {
   const [open, setOpen] = useState(false);
@@ -26,8 +24,8 @@ export function Signals() {
           onClick={handleOpen}
           variant="gradient"
         >
-          <UserPlusIcon color="white" className="h-5 w-5 text-inherit" />
-          <div>Add</div>
+          <CreditCardIcon color="white" className="h-5 w-5 text-inherit" />
+          <div>Manage Renewals</div>
         </Button>
       </div>
       <SignalTable />

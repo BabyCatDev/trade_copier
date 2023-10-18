@@ -21,6 +21,7 @@ import {
   Notifications,
   Accounts,
   Signals,
+  Copier,
 } from "@/pages/dashboard";
 import { SignIn, SignUp } from "@/pages/auth";
 
@@ -85,7 +86,7 @@ export const routes = [
         icon: <ShareIcon {...icon} />,
         name: "trade copier",
         path: "/trade copier",
-        element: <Tables />,
+        element: <Copier />,
       },
       {
         icon: <EnvelopeIcon {...icon} />,
