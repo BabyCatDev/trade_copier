@@ -43,48 +43,45 @@ export function Copier() {
           unmount: { scale: 0.9, y: -100 },
         }}
       >
-        <DialogHeader>Add Account</DialogHeader>
+        <DialogHeader>Create New Trade Copier</DialogHeader>
         <DialogBody className="grid grid-cols-1 divide-y">
           <div className="grid grid-cols-4 gap-4 p-3">
-            <div className="m-auto font-bold">Account Type</div>
-            <div className="col-span-3 flex flex-col gap-4">
-              <Radio
-                name="type"
-                label="Metatrader 4(MT4)"
-                color="blue"
-                defaultChecked
-              />
-              <Radio name="type" label="Metatrader 5(MT5)" color="green" />
-            </div>
-          </div>
-          <div className="grid grid-cols-4 gap-4 p-3">
-            <div className="m-auto font-bold">Descriptive Name</div>
+            <div className="m-auto font-bold">Copy From</div>
             <div className="col-span-3 flex w-72 flex-col ">
-              <Input label="Name" color="blue" />
-            </div>
-          </div>
-          <div className="grid grid-cols-4 gap-4 p-3">
-            <div className="m-auto font-bold">Account Number</div>
-            <div className="col-span-3 flex w-72 flex-col ">
-              <Input label="Account Number" color="blue" />
-            </div>
-          </div>
-          <div className="grid grid-cols-4 gap-4 p-3">
-            <div className="m-auto font-bold">Password</div>
-            <div className="col-span-3 flex w-72 flex-col ">
-              <Input label="Password" color="blue" type="password" />
-            </div>
-          </div>
-          <div className="grid grid-cols-4 gap-4 p-3">
-            <div className="m-auto font-bold">Broker Name</div>
-            <div className="col-span-3 flex w-72 flex-col ">
-              <Select color="blue" label="Select Version">
-                <Option>Material Tailwind HTML</Option>
-                <Option>Material Tailwind React</Option>
-                <Option>Material Tailwind Vue</Option>
-                <Option>Material Tailwind Angular</Option>
-                <Option>Material Tailwind Svelte</Option>
+              <Select color="blue" label="Provider">
+                <Option>Demo Account</Option>
+                <Option>Signals</Option>
+                <Option>Trading Network Club</Option>
+                <Option>My accounts</Option>
               </Select>
+            </div>
+          </div>
+          <div className="grid grid-cols-4 gap-4 p-3">
+            <div className="m-auto font-bold">Send To</div>
+            <div className="col-span-3 flex w-72 flex-col ">
+              <Select color="blue" label="Copier">
+                <Option>Demo Account</Option>
+                <Option>Signals</Option>
+                <Option>Trading Network Club</Option>
+                <Option>My accounts</Option>
+              </Select>
+            </div>
+          </div>
+          <div className="grid grid-cols-4 gap-4 p-3">
+            <div className="m-auto font-bold">Risk Type</div>
+            <div className="col-span-3 flex w-72 flex-col ">
+              <Select color="blue" label="Copier">
+                <Option>Risk multiplier by balance</Option>
+                <Option>Risk multiplier by equity</Option>
+                <Option>Lot Multiplierffffffffffff</Option>
+                <Option>Fixed lot</Option>
+              </Select>
+            </div>
+          </div>
+          <div className="grid grid-cols-4 gap-4 p-3">
+            <div className="m-auto font-bold">Multiplier</div>
+            <div className="col-span-3 flex w-72 flex-col ">
+              <Input label="Multiplier" color="blue" type="number" />
             </div>
           </div>
         </DialogBody>
